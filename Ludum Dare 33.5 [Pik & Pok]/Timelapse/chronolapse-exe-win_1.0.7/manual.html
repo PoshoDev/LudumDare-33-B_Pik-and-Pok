@@ -1,0 +1,175 @@
+<html>
+<body>
+<h2><b>Welcome to Chronolapse</b></h2>
+
+<h3>Overview</h3>
+<p>Chronolapse (CL) is a tool for creating time lapses on windows using
+screen captures, webcam captures, or both at the same time. CL also provides
+some rudimentary tools for annotating your time lapse, as well as creating
+a picture-in-picture effect with two sets of images. Each piece of CL functionality
+has been created to work stand-alone to make the program more versatile. For example,
+you can easily capture with another program and create a PIP in CL, or capture with
+CL and annotate somewhere else.</p>
+
+<h3>Quick Launch</h3>
+<p>So you want to create a time lapse as quickly as possible. Here is a quick
+guide to making a simple screencapture timelapse.</p>
+<ol>
+    <li>On the capture tab, set the capture frequency (default is 1 per 60 seconds)</li>
+    <li>Check the screenshot checkboxes</li>
+    <li>Hit the screenshot configure button and select the save folder to store captures in, as well as the file format</li>
+    <li>Hit the start capture button</li>
+    <li>Hit stop capture when finished</li>
+</ol>
+<p>That's it! You now have a folder full of screenshots. Read the rest of this documentation for more detailed instructions</p>
+
+<h3>Capture</h3>
+<p>The capture tab is where you set up and run the actual captures. Everything
+that happens in real time will be done here. You can estimate how much time is left
+before the next capture by the blue bar at the bottom; when it fills all the way up,
+another capture is saved.
+
+Note: The webcam library is only supported on windows, so you cannot use webcam captures
+outside of windows. All the other functionality works. If someone out there has experience
+with a good linux/mac webcam lib (video4linux?), let me know.</p>
+
+<p>Item Overview</p>
+<ul>
+    <li>Frequency: Set the number of seconds between each capture. Set this to zero
+    to stop automatic captures(force captures only).</li>
+    <li>Screenshots: Check the box to enable screenshots and hit the configure button to popup a dialog with screenshot options.
+        <ul>
+            <li>Show Timestamp: Check this to have CL write a timestamp on your screenshots</li>
+            <li>File Prefix: This will be pre-pended to each screenshot file name</li>
+            <li>Save Folder: This is where all the images will be saved</li>
+            <li>File Format: This defines which image format to save the screenshots in</li>
+        </ul>
+    </li>
+    <li>Webcam: Check the box to enable webcam captures and hit the configure button to popup two dialgos with webcam options. On
+    the first dialog, select the correct source and video size. On the second, select capture options.
+        <ul>
+            <li>Test Webcam: Press this to take a sample shot from your webcam.
+                Note, some webcams take a while to initialize - if you
+                get a blank screen, try again a few seconds later before changing anything.</li>
+            <li>Show Timestamp: Check this to have CL write a timestamp on your captures</li>
+            <li>File Prefix: This will be pre-pended to each capture file name</li>
+            <li>Save Folder: This is where all the captures will be saved. Making it different from the screenshots will make your life much easier if you plan to use PIP</li>
+            <li>File Format: This defines which image format to save the screenshots in</li>
+        </ul>
+    </li>
+    <li>Start Capture: Press this to begin capturing. When capturing the text will change to Stop Capture - press it again to stop.</li>
+    <li>Force Capture: Press this to force CL to take a screenshot and/or webcam capture at that moment. Use to make sure certain things make it
+    into your time lapse, or use with the capture frequency set to zero for creating a stop motion video</li>
+    <li>Frames: This is the number of images to save when you press Force Capture.</li>
+    <li>Annotate: The annotation box is a way to add simple text to your time lapses. Place text in the box and hit the Add Annotation
+    button to save the text in a special annotation file in the capture save folders. When you are finished capturing, you
+    can add the annotation to your images using the annotation tab.</li>
+    <li>Add Annotation: Press this to save the text in the annotation box</li>
+</ul>
+
+<h3>Schedule</h3>
+<p>On this tab you can schedule Chronolapse to start and stop capturing at specific times.
+When activated, end time will stop your capturing, even if it wasn't started with the
+start time scheduler. Note: All times are local to your machine.</p>
+<p>Item Overview</p>
+<ul>
+    <li>Start Time: The time you want to begin capturing</li>
+    <li>Stop Time: The time you want to stop capturing</li>
+    <li>Activate Schedule: Check this to 'lock in' your times and actually schedule the start and end</li>
+</ul>
+
+<h3>Adjust</h3>
+<p>On this tab you can resize or rotate a folder of images. Simple select the source folder, the output folder,
+and the target size or rotation. Note, if you use the same
+folder for the source and the output, the source images will be overwritten.</p>
+<p>Item Overview</p>
+<ul>
+    <li>Source Folder - This is where the images you want to resize are</li>
+    <li>Output Folder - This is where the resized images will be saved</li>
+    <li>Width - The target width of your images, in pixels</li>
+    <li>Height - The target height of your images, in pixels</li>
+    <li>Resize - Press this to resize all the images in the source folder</li>
+    <li>Rotation - Target rotation, in degrees</li>
+    <li>Rotate - Press this to rotate all the images in the source folder</li>
+</ul>
+
+<h3>Annotate</h3>
+<p>This tab is where you apply any annotations you created while capturing. See the Annotate and Add Annotation descriptions above.</p>
+<p>There are two kinds of annotations you can apply - timed and constant. In timed, the words pop up at the correct time, last
+for however long you specify in the duration box, then disappear. Additionally, the text will fade in/out if you check the appropriate boxes.
+Constant annotation differs in that the text will remain on the timelapse until it finds a new annotation. This annotation system works great if you want to have a very simple tool for putting some information on the screen, but
+it isn't well suited for anything complex. If you need more versatile annotations, consider uploading to youtube and using
+their built in system.</p>
+<p>Item Overview</p>
+<ul>
+    <li>Image/Annotation Folder: This is the folder where the images and annotation file are found</li>
+    <li>Output Folder: This is where the annotated images will be output. You should use a different folder from your source folder.</li>
+    <li>Select Font: Hit this button to show a font selection dialog. The annotations will be rendered on your images in this font.</li>
+    <li>Opacity: Select the opacity of the annotation text. 100 is full opacity.</li>
+    <li>Position: Select if you want your text to be rendered near the top or the bottom of the images</li>
+    <li>Timed: Check this to enable timed annotations - see above</li>
+    <li>Duration: If timed is checked, this is how many seconds the annotations will show up for. Note: CL uses the current framerate setting on the video tab to 'guess' at how long to display the annotations.</li>
+    <li>Constant: Check this to enable constant annotations - see above</li>
+    <li>Fade In: Check this to have timed annotations fade in</li>
+    <li>Fade Out: Check this to have timed annotations fade out</li>
+    <li>Create Annotated Images: Click this to process the images and apply the annotations</li>
+</ul>
+
+<h3>PIP</h3>
+<p>Chronolapse can take two folders of images (say, from a synchronised webcam and screen capture time lapse) and merge them
+into a picture-in-picture composition. You have many options of size and position of the PIP, so experiment a little until you
+get the look you want. Note, CL sorts the images in both source folders by name then uses them sequentially, so be sure there
+are no extra image files lurking in the source folders that might affect your time lapse.</p>
+<p>Item Overview</p>
+<ul>
+    <li>Main Image Folder: This is the folder for the 'main' source images - for corner PIP settings, this will be the main picture.</li>
+    <li>PIP Image Folder: This is the folder for the 'PIP' source images - for corner PIP settings, this will be the corner.</li>
+    <li>Output Folder: This is the folder the completed PIP images will be saved in</li>
+    <li>PIP Size: Select the size of the PIP</li>
+    <li>Pip Position: Select where the PIP should go relative to the main image</li>
+    <li>Create PIP: Click this to process the images</li>
+</ul>
+
+<h3>Video</h3>
+<p>Chronolapse uses MEncoder to encode the folders of images into video files. You have
+a few options for which codecs you want to use and what kind of video file to output. If you
+need more control over the encoding process, you should use MEncoder directly.</p>
+<p>Item Overview</p>
+<ul>
+    <li>Source Images: This is the folder for the source images CL will encode</li>
+    <li>Destination Folder: This is the folder where the timelapse video will be saved</li>
+    <li>Video Format: Select which format you want your video encoded in</li>
+    <li>Video Codec: Select which codec to use for encoding</li>
+    <li>Frame Rate: Select the frame rate you want for your movie</li>
+    <li>ReCalculate Estimate: Press this to estimate the length of your movie - takes the number of files in the source folder over the frame rate</li>
+    <li>Create Video: Press this to encode your video</li>
+</ul>
+
+<h3>Audio</h3>
+<p>Chronolapse uses MEncoder to dub audio onto your video files. If you
+need more control over the dubbing process, you should use MEncoder directly.</p>
+<p>Item Overview</p>
+<ul>
+    <li>Video Source: This is the video file you want to add audio to</li>
+    <li>Audio Source: This is the file containing your audio</li>
+    <li>Output Folder: This is the folder in which your finished video will be placed</li>
+    <li>Add Audio: Press this to begin dubbing</li>
+</ul>
+
+<h3>About</h3>
+<p>Chronolapse was written by Collin 'Keeyai' Green (http://keeyai.com) and released
+under the MIT license, so it is free to use for pretty much whatever you want. As
+always, if you use the code, a link back is nice and if you are using it commercially
+a link back is awesome. :)</p>
+<p>Please send feedback, comments, bug reports, questions, etc, to chronolapse@keeyai.com. I
+always love to hear from people using my apps, and you guys usually have better
+ideas for features than I do. </p>
+
+<h3>Command Line Options</h3>
+<p>For the slightly more advanced users, you can send commmand line options to chronolapse.</p>
+<ul>
+    <li>-v / -q:  increases/decreases the verbosity</li>
+    <li>-a: start capturing immediately</li>
+</ul>
+</body>
+</html>
