@@ -71,7 +71,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.pik_hp = 3
+            <string>///Sets Pik's HP if this is a test
+global.pik_hp = 3
 </string>
           </argument>
         </arguments>

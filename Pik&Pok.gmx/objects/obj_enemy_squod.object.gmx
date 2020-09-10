@@ -199,6 +199,51 @@ if change = 3 //Right
       </action>
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Dead end glitch BTFO
+                
+if dir = "down"
+    if instance_position(x,y+16,par_solid)
+        if instance_position(x+16,y,par_solid)
+            if instance_position(x-16,y,par_solid)
+                dir = "up"
+                
+if dir = "left"
+    if instance_position(x-16,y,par_solid)
+        if instance_position(x,y-16,par_solid)
+            if instance_position(x,y+16,par_solid)
+                dir = "right"
+                
+if dir = "right"
+    if instance_position(x+16,y,par_solid)
+        if instance_position(x,y+16,par_solid)
+            if instance_position(x,y-16,par_solid)
+                dir = "left"
+
+if dir = "up"
+    if instance_position(x,y-16,par_solid)
+        if instance_position(x-16,y,par_solid)
+            if instance_position(x+16,y,par_solid)
+                dir = "down"
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>612</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -449,24 +494,24 @@ if change = 3 //Right
     <event eventtype="4" ename="obj_coin">
       <action>
         <libid>1</libid>
-        <id>115</id>
+        <id>101</id>
         <kind>0</kind>
-        <userelative>0</userelative>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_bounce</functionname>
+        <functionname>action_move</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>4</kind>
-            <string>1</string>
+            <kind>1</kind>
+            <string>000010000</string>
           </argument>
           <argument>
-            <kind>4</kind>
+            <kind>0</kind>
             <string>0</string>
           </argument>
         </arguments>

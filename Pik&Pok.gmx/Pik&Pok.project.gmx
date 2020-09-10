@@ -17,6 +17,8 @@
     <sound>sound\snd_die</sound>
     <sound>sound\snd_win</sound>
     <sound>sound\snd_newstage</sound>
+    <sound>sound\msc_1</sound>
+    <sound>sound\msc_2</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Characters">
@@ -207,6 +209,8 @@
         <sprite>sprites\promo_large</sprite>
       </sprites>
       <sprite>sprites\reference_16x16</sprite>
+      <sprite>sprites\spr_pik_stand_down_gb</sprite>
+      <sprite>sprites\spr_pok_stand_down_gb</sprite>
     </sprites>
     <sprite>sprites\sprite105</sprite>
     <sprite>sprites\sprite107</sprite>
@@ -218,6 +222,7 @@
     <sprite>sprites\sprite113</sprite>
     <sprite>sprites\sprite112</sprite>
     <sprite>sprites\sprite114</sprite>
+    <sprite>sprites\spr_controls</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_test</background>
@@ -311,6 +316,9 @@
       </objects>
       <object>objects\obj_wall</object>
       <object>objects\obj_wall_gray</object>
+      <object>objects\obj_wall_blue</object>
+      <object>objects\obj_wall_red</object>
+      <object>objects\obj_wall_yellow</object>
       <object>objects\obj_wall_lafty</object>
     </objects>
     <objects name="Misc.">
@@ -328,18 +336,38 @@
       </objects>
     </objects>
     <object>objects\obj_randomizer_squod</object>
+    <object>objects\obj_randomizer_bizz</object>
+    <object>objects\obj_randomizer_lafty</object>
     <object>objects\obj_randomizer_coin</object>
     <object>objects\obj_enemycount</object>
     <object>objects\obj_pik_health</object>
     <object>objects\obj_pok_health</object>
     <object>objects\obj_CRT</object>
+    <object>objects\obj_promo</object>
+    <object>objects\obj_menu</object>
+    <object>objects\obj_controls</object>
+    <object>objects\obj_gameover</object>
+    <object>objects\obj_clear</object>
+    <object>objects\obj_joystick</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room18</room>
-    <room>rooms\room17</room>
-    <room>rooms\rom_1_3</room>
+    <room>rooms\rom_menu</room>
     <room>rooms\rom_1_1</room>
     <room>rooms\rom_1_2</room>
+    <room>rooms\rom_1_3</room>
+    <room>rooms\rom_2_1</room>
+    <room>rooms\rom_2_2</room>
+    <room>rooms\rom_2_3</room>
+    <room>rooms\rom_3_1</room>
+    <room>rooms\rom_3_2</room>
+    <room>rooms\rom_3_3</room>
+    <room>rooms\rom_4_1</room>
+    <room>rooms\rom_4_2</room>
+    <room>rooms\rom_4_3</room>
+    <room>rooms\rom_5_1</room>
+    <room>rooms\rom_clear</room>
+    <room>rooms\rom_1_1_touch</room>
+    <room>rooms\rom_promo</room>
     <room>rooms\rm_init</room>
     <room>rooms\rm_main</room>
     <room>rooms\rom_test</room>
@@ -360,6 +388,9 @@
     <room>rooms\Boss_Size</room>
     <room>rooms\room9</room>
     <room>rooms\Spin</room>
+    <room>rooms\rom_controls</room>
+    <room>rooms\rom_gameover</room>
+    <room>rooms\room32</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

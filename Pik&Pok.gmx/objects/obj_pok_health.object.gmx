@@ -71,7 +71,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.pok_hp = 3
+            <string>///Sets Pok's HP if this is a test
+global.pok_hp = 3
 </string>
           </argument>
         </arguments>

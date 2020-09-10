@@ -3,7 +3,7 @@
   <name>CRT Pixel Shader</name>
   <version>1.0.0</version>
   <packageID></packageID>
-  <ProductID>9C339A6E963C1E649DA04DADE28EC071</ProductID>
+  <ProductID></ProductID>
   <date>16/09/14</date>
   <license>Free to use, also for commercial games.</license>
   <description></description>
@@ -17,7 +17,12 @@
   <androidsourcedir></androidsourcedir>
   <macsourcedir></macsourcedir>
   <maclinkerflags></maclinkerflags>
+  <maccompilerflags></maccompilerflags>
   <androidinject></androidinject>
+  <androidmanifestinject></androidmanifestinject>
+  <iosplistinject></iosplistinject>
+  <androidactivityinject></androidactivityinject>
+  <gradleinject></gradleinject>
   <iosSystemFrameworks/>
   <iosThirdPartyFrameworks/>
   <androidPermissions/>

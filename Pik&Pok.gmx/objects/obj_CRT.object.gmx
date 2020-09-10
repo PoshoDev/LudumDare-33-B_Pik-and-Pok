@@ -25,9 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>application_surface_draw_enable(false);
+            <string>//I did this lol
+//crt_surface_scale = 4.5; //When MY Fullscreen
+crt_surface_scale = 4;
+///////
 
-crt_surface_scale = 3;
+application_surface_draw_enable(false);
+
+//crt_surface_scale = 3; //Original
 
 //crt_surface_width  = surface_get_width(crt_surface) * crt_surface_scale;
 //crt_surface_height = surface_get_width(crt_surface) * crt_surface_scale;
